@@ -1,1 +1,1 @@
-This is a stepper demo where user can see all the steps he completed. 
+This is a stepper with step tracking demo where user can see all the steps he completed. 
