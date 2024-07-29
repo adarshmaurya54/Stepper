@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.stepper-container{
+  background: #201E43;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2.5em;
+  position: relative;
+}
+.stepper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px;
+  position: relative;
+}
+.step-number{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: gray;
+  color: white;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.stepper-content{
+  font-size: 2.2em;
+}
+.step-content{
+  font-size: 1.2em;
+}
+.line{
+  position: absolute;
+  left: 19px;
+  top: 2.5em;
+  height: 40px;
+  width: 2px;
+  background: gray;
+  z-index: 1;
+}
+.line::after{
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: top 0.5s ease-in-out;
+  background: #88D66C;
+}
+.line-after::after{
+  top: 0;
+}
+.active{
+  background: #88D66C;
+  color: white;
+}
+.back-btn,.continue-btn{
+
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  background: #4F1787;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.back-btn:focus,.continue-btn:focus{
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
